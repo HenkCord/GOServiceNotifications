@@ -3,7 +3,7 @@ package sms
 import (
 	"time"
 
-	"github.com/HenkCord/notifications/utils"
+	"github.com/HenkCord/GOServiceNotifications/utils"
 
 	"github.com/spf13/viper"
 	"gopkg.in/mgo.v2/bson"

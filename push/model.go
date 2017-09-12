@@ -3,7 +3,7 @@ package push
 import (
 	"time"
 
-	"github.com/HenkCord/notifications/utils"
+	"github.com/HenkCord/GOServiceNotifications/utils"
 	"gopkg.in/mgo.v2/bson"
 
 	"errors"

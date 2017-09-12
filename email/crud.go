@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/HenkCord/notifications/db"
-	"github.com/HenkCord/notifications/errors"
-	"github.com/HenkCord/notifications/utils"
+	"github.com/HenkCord/GOServiceNotifications/db"
+	"github.com/HenkCord/GOServiceNotifications/errors"
+	"github.com/HenkCord/GOServiceNotifications/utils"
 	"github.com/gin-gonic/gin"
 	"gopkg.in/mgo.v2/bson"
 )

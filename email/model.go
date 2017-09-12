@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/spf13/viper"
-	"github.com/HenkCord/notifications/utils"
+	"github.com/HenkCord/GOServiceNotifications/utils"
 	"gopkg.in/mgo.v2/bson"
 
 	"errors"

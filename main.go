@@ -5,12 +5,12 @@ import (
 
 	"os"
 
-	"github.com/HenkCord/notifications/conf"
-	"github.com/HenkCord/notifications/db"
-	e "github.com/HenkCord/notifications/email"
-	"github.com/HenkCord/notifications/errors"
-	p "github.com/HenkCord/notifications/push"
-	s "github.com/HenkCord/notifications/sms"
+	"github.com/HenkCord/GOServiceNotifications/conf"
+	"github.com/HenkCord/GOServiceNotifications/db"
+	e "github.com/HenkCord/GOServiceNotifications/email"
+	"github.com/HenkCord/GOServiceNotifications/errors"
+	p "github.com/HenkCord/GOServiceNotifications/push"
+	s "github.com/HenkCord/GOServiceNotifications/sms"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 )
