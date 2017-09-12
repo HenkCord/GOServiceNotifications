@@ -74,8 +74,8 @@ func ConfirmEmailAddress(c *gin.Context) {
 	}{
 		Username:             item.Username,
 		URLActivationAccount: viper.GetString("services.email.urlActivationAccount") + item.ActivationCode,
-		URLFeedback:          viper.GetString("services.services.all.urlFeedback"),
-		SupportEmailAddress:  viper.GetString("services.services.all.supportEmail"),
+		URLFeedback:          viper.GetString("services.all.urlFeedback"),
+		SupportEmailAddress:  viper.GetString("services.all.supportEmail"),
 	}
 
 	res := NewEmail(item.Email, utils.LangGetField(tpl.Subject, item.Lang), "")
