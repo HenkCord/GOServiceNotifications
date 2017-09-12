@@ -25,7 +25,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"code\": \"24237\",\n\t\"lang\": \"en\"\n}"
+							"raw": "{\n\t\"userId\": \"USERID\",\n\t\"phone\": \"+7 (000) 000-00-00\",\n\t\"code\": \"24237\",\n\t\"lang\": \"en\"\n}"
 						},
 						"description": ""
 					},
