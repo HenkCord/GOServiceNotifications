@@ -1,0 +1,19 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/",
+    "public/",
+    ".gitignore",
+    "test/"
+  ],
+  "verbose": true,
+  "watch": [],
+  "env": {
+    "Env": "production"
+  },
+  "ext": "*",
+  "execMap": {
+    "go": "go run"
+  }
+}

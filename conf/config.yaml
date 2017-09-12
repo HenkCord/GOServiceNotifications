@@ -1,0 +1,52 @@
+environment: 
+  default: local
+  production:
+    server:
+      host: 127.0.0.1
+      port: 8080
+    db:
+      mongo: 
+        host: 127.0.0.1
+        port: 27017
+  development:
+    server:
+      host: 127.0.0.1
+      port: 8080
+    db:
+      mongo: 
+        host: 127.0.0.1
+        port: 27017
+  local:
+    server:
+      host: 127.0.0.1
+      port: 8080
+    db:
+      mongo: 
+        host: 127.0.0.1
+        port: 27017
+server: 
+db: 
+services:
+  sms:
+    charset: 'utf-8'
+    fmt: 3
+    send: 'https://smsc.ru/sys/send.php?login=LOGIN&psw=PASSWORD'
+    lang: 'ru'
+  email:
+    urlActivationAccount: 'https://site.site/activation?code='
+    smtp:
+      username: 'user'
+      password: 'pass'
+      host: 'smtp.SITE.SITE'
+      port: 465
+    lang: 'ru'
+  push:
+    oneSignal: 
+      APIKey: 'APIKEY'
+      appID: 'APPID'
+      send: 'https://onesignal.com/api/v1/notifications'
+    lang: 'ru'
+  all: 
+    supportPhone: 'PHONE'
+    supportEmail: 'site.site'
+    supportFeedback: 'https://site.site/feedback'

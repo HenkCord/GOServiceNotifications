@@ -1,0 +1,446 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GoBitkom.Notifications",
+		"_postman_id": "dc01e3a3-47fb-7d9e-53fd-9757ffc295fb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sms",
+			"description": "",
+			"item": [
+				{
+					"name": "/sms/getCode",
+					"request": {
+						"url": "http://localhost:8080/sms/getCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"code\": \"24237\",\n\t\"lang\": \"en\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/reservationFromApp",
+					"request": {
+						"url": "http://localhost:8080/sms/reservationFromApp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"lang\": \"en\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/nearWorkTime",
+					"request": {
+						"url": "http://localhost:8080/sms/nearWorkTime",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"placeType\": \"ресторан\",\n\t\"placeName\": \"Название заведения\",\n\t\"placeStreet\":\"ул. Улица д. Дом\",\n\t\"nearWorkTime\":\"15:00\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/reservationApprovedWith15Minutes",
+					"request": {
+						"url": "http://localhost:8080/sms/reservationApprovedWith15Minutes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"date\": \"06.12.2017\",\n\t\"time\": \"15:30\",\n\t\"peopleCount\": \"2 персоны\",\n\t\"placeType\": \"ресторан\",\n\t\"placeName\": \"Название заведения\",\n\t\"placeStreet\":\"ул. Улица д. Дом\",\n\t\"firstName\":\"Artyom\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/reservationApproved",
+					"request": {
+						"url": "http://localhost:8080/sms/reservationApproved",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"date\": \"06.12.2017\",\n\t\"time\": \"15:30\",\n\t\"peopleCount\": \"2 персоны\",\n\t\"placeType\": \"ресторан\",\n\t\"placeName\": \"Название заведения\",\n\t\"placeStreet\":\"ул. Улица д. Дом\",\n\t\"firstName\":\"Artyom\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/noResponse",
+					"request": {
+						"url": "http://localhost:8080/sms/noResponse",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"placeType\": \"ресторан\",\n\t\"placeName\": \"Название заведения\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/reservationCancelled",
+					"request": {
+						"url": "http://localhost:8080/sms/reservationCancelled",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"phone\": \"+7 (925) 197-86-20\",\n\t\"placeType\": \"ресторане\",\n\t\"placeName\": \"Название заведения\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "smsTemplates",
+			"description": "",
+			"item": [
+				{
+					"name": "/sms/template",
+					"request": {
+						"url": "http://localhost:8080/sms/template",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/template/:name",
+					"request": {
+						"url": "http://localhost:8080/sms/template/getCode",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/template",
+					"request": {
+						"url": "http://localhost:8080/sms/template",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"reservationCancelled\",\n\t\"description\": \"Бронь отменена\",\n\t\"message\": {\n\t\t\"ru\": \"Ваша бронь в {{.PlaceType}} \\\"{{.PlaceName}}\\\" отменена.\",\n\t\t\"en\": \"Your reservation in {{.PlaceType}} \\\"{{.PlaceName}}\\\" has been canceled.\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/template/:name",
+					"request": {
+						"url": "http://localhost:8080/sms/template/getCode",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\": {\n\t\t\"en\": \"Your code: {{.Code}}\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/template/:name",
+					"request": {
+						"url": "http://localhost:8080/sms/template/getCode",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": "Remove template by ID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "email",
+			"description": "",
+			"item": [
+				{
+					"name": "/email/confirmEmail",
+					"request": {
+						"url": "http://localhost:8080/email/confirmEmail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"5979ffdf2d1f124bec65e184\",\n\t\"email\": \"leo240532@yandex.ru\",\n\t\"username\": \"Artyom\",\n\t\"activationCode\": \"codeCODE\",\n\t\"lang\": \"ru\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "emailTemplates",
+			"description": "",
+			"item": [
+				{
+					"name": "/email/template",
+					"request": {
+						"url": "http://localhost:8080/email/template",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template",
+					"request": {
+						"url": "http://localhost:8080/email/template",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"confirmEmail\",\n\t\"description\": \"Отправка сообщения пользователю с дальнейшими действиями по завершению регистрации\",\n\t\"subject\": {\n\t\t\"ru\": \"Добро пожаловать\",\n\t\t\"en\": \"Welcome\"\n\t},\n\t\"message\": {\n\t\t\"ru\": \"<p>Здравствуйте, {{.Username}}</p><p>Для завершения регистрации в Битком24 вам потребуется пройти по ссылке, которая активирует вашу учетую запись:</p><p>{{.URLActivationAccount}}</p><p>Если у Вас есть вопросы, обратитесь в нашу службу поддержки по адресу {{.SupportEmailAddress}}  или через форму на сайте {{.URLFeedback}} , мы незамедлительно отреагируем на ваше письмо и постараемся вам помочь.</p><p>Это письмо сформировано автоматически. Пожалуйста, не отвечайте на него.</p>\",\n\t\t\"en\": \"<p>Hi, {{.Username}}</p><p>To complete registration in Bitcom24, you need to go through the link that activates your account:</p><p>{{.URLActivationAccount}}</p><p>If you have any questions, please contact our support team at {{.SupportEmailAddress}}  или or through the form on the site {{.URLFeedback}} , we will immediately respond to your letter and try to help you.</p><p>This letter is generated automatically. Please do not reply to it.</p>\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"Отправка сообщения пользователю с дальнейшими действиями по завершению регистрации.\",\n\t\"subject\": {\n\t\t\"ru\": \"Добро пожаловать\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": "Remove template by ID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "push",
+			"description": "",
+			"item": [
+				{
+					"name": "/push/giveReview",
+					"request": {
+						"url": "http://localhost:8080/push/giveReview",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"asdasd\",\n\t\"playerId\": \"7bf600a0-4a3e-4ee3-9439-75bca528dffc\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pushTemplates",
+			"description": "",
+			"item": [
+				{
+					"name": "/push/template",
+					"request": {
+						"url": "http://localhost:8080/push/template",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/push/template",
+					"request": {
+						"url": "http://localhost:8080/push/template",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"giveReview\",\n\t\"message\": {\n\t\t\"ru\": \"Привет\",\n\t\t\"en\": \"Hello\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"subject\": {\n\t\t\"ru\": \"Добро пожаловать\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/email/template/:name",
+					"request": {
+						"url": "http://localhost:8080/email/template/confirmEmail",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": "Remove template by ID"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
