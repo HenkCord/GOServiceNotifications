@@ -39,12 +39,6 @@ func main() {
 			smsTemplate.DELETE("/:name", s.DeleteTemplate)
 		}
 		sms.POST("/getCode", s.GetCode)
-		sms.POST("/reservationFromApp", s.ReservationFromApp)
-		sms.POST("/nearWorkTime", s.NearWorkTime)
-		sms.POST("/reservationApprovedWith15Minutes", s.ReservationApprovedWith15Minutes)
-		sms.POST("/reservationApproved", s.ReservationApproved)
-		sms.POST("/noResponse", s.NoResponse)
-		sms.POST("/reservationCancelled", s.ReservationCancelled)
 	}
 
 	email := router.Group("/email")
