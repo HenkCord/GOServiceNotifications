@@ -1,5 +1,6 @@
-GOServiceNotifications
+Service Notifications Golang
 ===
+example microservice
 
 Start programm
 ---
